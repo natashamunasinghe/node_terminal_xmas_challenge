@@ -14,21 +14,19 @@ const gifts = [
           "Twelve drummers drumming"    
       ];
   
-      var i;
-      let j;
-
-      for (i = 0; i < days.length; i++ ) {
-         for (j = 0; j < gifts[i].length; j++ ) {
-          // let arrayTwo = gifts[i];
-          // console.log(arrayTwo)
-          // answer.push(arrayTwo);
-          // console.log(answer);
-        // console.log(`On the ${days[i]} day of Xmas`, gifts[i]);
-        console.log(`On the ${days[i]} day of Xmas,${gifts[i]}`);
-
-          // console.log(answer);    
-        }
-    }
     
+    for (let i = 0; i < days.length; i++){
+
+      console.log(`On the ${days[i]} day of Christmas\nmy true love sent to me`);
+  
+      if (i === 0) {
+          console.log(`A partridge in a pear tree.\n`);
+      } else {
+          for (let j = i; j >= 0; j--) {
+              console.log(gifts[j]);
+          }
+      }
+  
+  }
 
 
